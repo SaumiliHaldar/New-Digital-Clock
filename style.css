@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #051937,
+        #004d7a,
+        #008793,
+        #00bf72,
+        #a8eb12
+    );
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.clockHolder {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+.timeHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.timeOptions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.timeOptions i {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.timeOptions i:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.mainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#clock {
+    font-size: 64px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+
+
+/* RESPONSIVE  MEDIA QUERY*/
+@media (max-width: 768px) {
+    #clock {
+        font-size: 48px;
+    }
+
+    .timeOptions i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #clock {
+        font-size: 36px;
+    }
+
+    .timeOptions i {
+        font-size: 16px;
+        margin: 0 5px;
+    }
+}
