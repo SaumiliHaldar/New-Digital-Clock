@@ -82,7 +82,7 @@ body {
 }
 
 
-/* RESPONSIVE  MEDIA QUERY*/
+/* RESPONSIVE MEDIA QUERY */
 @media (max-width: 768px) {
     #clock {
         font-size: 48px;
